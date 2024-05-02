@@ -6,6 +6,7 @@ import json
 What is does: collects list of arrow files in a local Hugging Face dataset directory.
 Purpose: to load dataset for every split without hassle.
 Usage:
+from HFDatasetInfo import HFDatasetInfo
 dataset_info = HFDatasetInfo(data_path)
 arrow_files = dataset_info.arrow_files
 # {'train': [
