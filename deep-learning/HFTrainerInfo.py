@@ -9,7 +9,7 @@ What is does: parses a trainer_state.json file in a checkpoint directory.
 Purpose: to track training progress.
 Usage:
 from HFTrainerInfo import HFTrainerInfo
-trainer_info = HFTrainerInfo(">checkpoint_path>")
+trainer_info = HFTrainerInfo("<checkpoint_path>")
 log_df = trainer_info.log_to_pandas()
 trainer_info.plot_loss(save_path="./training-loss-viz.png")
 """
