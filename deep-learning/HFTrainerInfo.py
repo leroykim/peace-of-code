@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 """
 What is does: parses a trainer_state.json file in a checkpoint directory.
-Purpose: to track training progress
+Purpose: to track training progress.
 Usage:
 from HFTrainerInfo import HFTrainerInfo
 trainer_info = HFTrainerInfo(">checkpoint_path>")
