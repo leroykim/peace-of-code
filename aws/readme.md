@@ -7,6 +7,16 @@
     - For example, want to grant inbound access to ip address `123.346.789.*`, enter ip address like this: `123.346.789.0/24`.
     - This will reduce bothersome frequent inboud ip setting, especially when using a dynamic ip address, e.g. using VPN.
 
+# User Names
+Each AMI has different [default user names](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html#ami-default-user-names).
+
+- For AL2023, Amazon Linux 2, or the Amazon Linux AMI, the user name is `ec2-user`.
+- For an Ubuntu AMI, the user name is `ubuntu`.
+
+> If you get error like this, review your user name:\
+> EC2 ssh Permission denied (publickey,gssapi-keyex,gssapi-with-mic)\
+> E.g. ssh -i private-key ec2-user@amazon.ec2.url
+
 # Accessing Instance Store Volumes
 Reference: [Make instance store volumes available on your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/add-instance-store-volumes.html#making-instance-stores-available-on-your-instances)
 1. Check volumes that are formatted and mounted:
