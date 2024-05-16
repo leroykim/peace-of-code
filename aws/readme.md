@@ -13,7 +13,7 @@ Each AMI has different [default user names](https://docs.aws.amazon.com/AWSEC2/l
 - For AL2023, Amazon Linux 2, or the Amazon Linux AMI, the user name is `ec2-user`.
 - For an Ubuntu AMI, the user name is `ubuntu`.
 
-> If you get error like this, review your user name:\
+> If you get error like this, but when every thing seems ok, review your user name:\
 > EC2 ssh Permission denied (publickey,gssapi-keyex,gssapi-with-mic)\
 > E.g. ssh -i private-key ec2-user@amazon.ec2.url
 
