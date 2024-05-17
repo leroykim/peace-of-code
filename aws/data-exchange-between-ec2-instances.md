@@ -1,5 +1,5 @@
 # TL;DR
-Do not use public address. Use private address instead.
+Do not use public address. Use private address instead. Change inbound rule in advance.
 
 # How to do it
 1. Get private IPv4 address.
