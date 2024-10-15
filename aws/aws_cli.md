@@ -3,7 +3,7 @@
 - Installation: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 - Configuration: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html
 
-## Steps
+## Initial Configuration Steps
 1. Download installer from the [link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 2. Get information from `Access Keys` page:
 
@@ -40,3 +40,23 @@ aws s3 ls --profile dkim1-profile
 4. Follow one of three instructions in `Access Keys` page:
 
 ![access_keys_detail](./access_keys_detail.png)
+
+## Log In and Out
+### Log In
+```zsh
+% aws sso login --profile dkim1-profile
+Attempting to automatically open the SSO authorization page in your default browser.
+If the browser does not open or you wish to use a different device to authorize this request, open the following URL:
+
+https://device.sso.us-east-1.amazonaws.com/
+
+Then enter the code:
+
+####-####
+Successfully logged into Start URL: https://address_in_access_key_page.awsapps.com/start/#
+```
+
+### Log Out
+```zsh
+% aws sso logout
+```
