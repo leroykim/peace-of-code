@@ -62,7 +62,7 @@ Successfully logged into Start URL: https://address_in_access_key_page.awsapps.c
 ```
 
 ## EC2 Instance
-Available commands list: https://docs.aws.amazon.com/cli/latest/reference/ec2/#cli-aws-ec2
+Available commands list: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/index.html
 ### start-instances
 Document: https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html
 ```zsh
