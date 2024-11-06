@@ -64,7 +64,7 @@ Successfully logged into Start URL: https://address_in_access_key_page.awsapps.c
 ## EC2 Instance
 Available commands list: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/index.html
 ### start-instances
-Document: https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html
+Document: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/start-instances.html
 ```zsh
 % aws sso login --profile dkim1-profile
 % aws ec2 start-instances --instance-ids i-1234567890abcdef0 --region us-east-1 --profile dkim1-profile
@@ -87,7 +87,7 @@ Document: https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.h
 ```
 
 ### stop-instances
-Document: https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html
+Document: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/stop-instances.html
 ```zsh
 % aws sso login --profile dkim1-profile
 % aws ec2 stop-instances --instance-ids i-1234567890abcdef0 --region us-east-1 --profile dkim1-profile
