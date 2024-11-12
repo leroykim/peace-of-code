@@ -66,7 +66,6 @@ Available commands list: https://awscli.amazonaws.com/v2/documentation/api/lates
 ### start-instances
 Document: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/start-instances.html
 ```zsh
-% aws sso login --profile dkim1-profile
 % aws ec2 start-instances --instance-ids i-1234567890abcdef0 --region us-east-1 --profile dkim1-profile
 {
     "StartingInstances": [
@@ -83,13 +82,11 @@ Document: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2
         }
     ]
 }
-% aws sso logout
 ```
 
 ### stop-instances
 Document: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/stop-instances.html
 ```zsh
-% aws sso login --profile dkim1-profile
 % aws ec2 stop-instances --instance-ids i-1234567890abcdef0 --region us-east-1 --profile dkim1-profile
 {
     "StoppingInstances": [
@@ -106,5 +103,9 @@ Document: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2
         }
     ]
 }
-% aws sso logout
+```
+
+### describe-instances
+```
+aws ec2 describe-instances --instance-ids i-1234567890abcdef0 --region us-east-1 --profile dkim1-profile
 ```
